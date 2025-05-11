@@ -27,7 +27,7 @@ There are 3 presets provided for your convenience:
 
 - `preset_temp_nrf.dtsi`: Print the die temperature of a nRF chip.
 - `preset_temp_rp2040.dtsi`: Print the die temperature of a RP2040 chip.
-- `preset_soc_vbatt.dtsi`: Print the State of Charge (SoC) of from the `&vbatt` sensor.
+- `preset_soc_vbatt.dtsi`: Print the State of Charge (SoC) from a sensor labeled `&vbatt`.
 
 ```dts
 #include <behaviors.dtsi>
