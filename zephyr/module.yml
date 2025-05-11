@@ -1,0 +1,6 @@
+name: zmk-behavior-sensor-printer
+build:
+  cmake: .
+  kconfig: Kconfig
+  settings:
+    dts_root: .

@@ -1,0 +1,12 @@
+#include "sensor_channel.h"
+
+/ {
+    behaviors {
+        print_temp: print_temp {
+            compatible = "zmk,behavior-sensor-printer";
+            #binding-cells = <0>;
+            sensor = <&temp>;
+            channel = <SENSOR_CHAN_DIE_TEMP>;
+        };
+    };
+};

@@ -1,0 +1,25 @@
+description: Sensor printer behavior
+
+compatible: "zmk,behavior-sensor-printer"
+
+include: zero_param.yaml
+
+properties:
+  sensor:
+    description: The sensor to print.
+    type: phandle
+    required: true
+  channel:
+    description: The channel to print.
+    type: int
+    required: true
+  decimal-places:
+    description: The number of decimal places to print.
+    type: int
+    required: false
+    default: 2
+  decimal-separator:
+    description: The decimal separator to use as a &kp keycode.
+    type: int
+    required: false
+    default: 0x070037 # DOT

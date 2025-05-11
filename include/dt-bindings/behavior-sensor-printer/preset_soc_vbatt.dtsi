@@ -1,0 +1,12 @@
+#include "sensor_channel.h"
+
+/ {
+    behaviors {
+        print_batt: print_batt {
+            compatible = "zmk,behavior-sensor-printer";
+            #binding-cells = <0>;
+            sensor = <&vbatt>;
+            channel = <SENSOR_CHAN_GAUGE_STATE_OF_CHARGE>;
+        };
+    };
+};
